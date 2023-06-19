@@ -1,0 +1,829 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --content-padding: 30px;
+    --text-color: #ff6683;
+    --header-width: 80px;
+    --primary-color: #fcbdb6;
+    --button-color: #ff3355;
+}
+
+/*css body*/
+body {
+    background-color: white;
+    min-height: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+/*class cho phần tử cần flex kiểu justify-content: space-between;*/
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*class cho phần tử cần flex kiểu justify-content: center;*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*class cho phần tử cần flex theo hàng (row)*/
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/*flex basis 50*/
+.basics-50 {
+    flex-basis: 50%;
+}
+
+/*flex basis 33*/
+.basics-33 {
+    flex-basis: 33.33%;
+}
+
+/*flex basis 25*/
+.basis-25 {
+    flex-basis: 25%;
+}
+
+/*flex basis 30*/
+.basics-30 {
+    flex-basis: 30%;
+}
+
+/*flex basis 70*/
+.basics-70 {
+    flex-basis: 70%;
+}
+
+/*flex basis 60*/
+.basics-60 {
+    flex-basis: 60%;
+}
+
+/*flex basis 40*/
+.basics-40 {
+    flex-basis: 40%;
+}
+
+/*float left*/
+.float-left {
+    float: left;
+}
+
+/*float right*/
+.float-right {
+    float: right;
+}
+
+/*text align right*/
+.align-right {
+    text-align: right;
+}
+
+/*text align center*/
+.align-center {
+    text-align: center;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/*css cho thẻ a*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*css cho ul*/
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*bỏ dấu chấm của thẻ li*/
+li {
+    list-style-type: none;
+}
+
+/*margin-left: 30px*/
+.mr-30 {
+    margin-left: 30px;
+}
+
+/*margin-right: 30px*/
+.ml-30 {
+    margin-right: 30px;
+}
+
+/*class gạch dưới của text*/
+.underline {
+    text-decoration: underline;
+}
+
+/*css header kiểu sticky*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+/*css cho header ở trên cùng*/
+.header-top {
+    background-color: #f49090 /*#ff6683*/;
+    width: 100%;
+    height: 30px;
+    color: white; /*màu chữ bên trong phần tử*/
+}
+
+/*css cho phần tử con của header trên cùng*/
+.header-top-item,
+.header-center-item {
+    padding: var(--content-padding); /*padding 2 bên*/
+}
+
+/*css hover cho thẻ a của header top*/
+.header-top-link:hover {
+    color: var(--text-color);
+}
+
+/*css cho header ở giữa*/
+.header-center {
+    color: white;
+    background-color: #fcbdb6;
+    height: var(--header-width);
+    width: 100%;
+}
+
+/*css hover cho thẻ a nằm trong li của thanh menu*/
+.header-center-item a:hover {
+    background-color: #ff6683;
+    color: white;
+    padding: 10px 0;
+}
+
+/*chỉnh màu chữ cho header giữa*/
+.header-center a {
+    color: white;
+}
+
+/*css cho thẻ li của menu gồm: đăng nhập, yêu thích, giỏ hàng*/
+.header-center-item li {
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle; /* Để căn giữa theo chiều dọc (tuỳ chỉnh theo yêu cầu) */
+    height: 40px;
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*css cho icon của menu để nằm trên cùng 1 hàng với text*/
+.header-center-item i.material-icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*số lượng mua hàng*/
+span.cart-quantity {
+    color: var(--button-color);
+    font-weight: bold;
+}
+
+/*menu gồm: Cửa hàng, Giảm giá, Bộ sưu tập, Bài viết, Liên hệ*/
+.header-menu {
+    height: var(--header-width);
+    width: 100%;
+    display: flex;
+    background-color: #fcbdb6;
+    padding: 0;
+}
+
+/*logo*/
+.logo {
+    width: 178px;
+    height: var(--header-width);
+}
+
+/*css cho section menu chứa ul (con của header-menu)*/
+#menu {
+    height: var(--header-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*class menu level 0*/
+.menu-lv0 {
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu-lv0 a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11pt;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.menu-lv0 li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lv0 li.current-menu-item {
+    background: #fdafbc;
+    border-radius: 10px;
+}
+
+.menu-lv0 li:hover {
+    background: #ff6683; /*#02c4c1;*/
+    border-radius: 10px;
+}
+
+/*css menu level 1*/
+.menu-lv1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f49090;
+    padding: 0;
+    width: 150px;
+}
+
+.menu-lv1 li {
+    float: none;
+    width: 150px;
+    position: relative;
+}
+
+.menu-lv1 a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.menu-lv0 li:hover .menu-lv1 {
+    display: block;
+}
+
+/*css menu level 2*/
+.menu-lv2 {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background: #f49090;
+    padding: 0;
+    width: 150px;
+}
+
+.menu-lv2 a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.menu-lv1 li:hover .menu-lv2 {
+    display: block;
+}
+
+/*cart menu right */
+.cart-lv0 {
+    position: relative;
+}
+
+.cart-lv1 {
+    display: none;
+    position: absolute;
+    left: 182;
+}
+
+/* .cart-lv0 li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+} */
+
+.cart-lv0 li:hover .cart-lv1 {
+    display: block;
+}
+
+/*banner*/
+#banner {
+    width: 100%;
+    height: 350px;
+    background-image: url("img/nen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/*css chữ bên trong banner*/
+#banner h1 {
+    text-transform: uppercase;
+    color: #ff6683;
+    margin: 0;
+    padding-left: 320px;
+    font-size: 52pt;
+}
+
+/*toolbar: áo thun họa tiết và thanh search*/
+#toolbar {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--content-padding); /*padding 2 bên*/
+}
+
+.title {
+    color: var(--text-color);
+}
+
+/*css cho search form*/
+.cover {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.flex-form input[type="submit"] {
+    background: #ef3f5a;
+    border: 1px solid #ef3f5a;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 50px 50px;
+}
+
+.flex-form input[type="submit"]:hover {
+    background: #d73851;
+    border: 1px solid #d73851;
+}
+
+.flex-form {
+    display: -webkit-box;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 400px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px;
+}
+
+.flex-form > * {
+    border: 0;
+    padding: 0 0 0 10px;
+    background: #fff;
+    line-height: 35px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+    border-radius: 50px 50px;
+}
+
+input[type="search"] {
+    flex-basis: 500px;
+}
+
+/*css cho bộ lọc*/
+/*section filter ngoài cùng*/
+#section-filter {
+    margin-bottom: 20px;
+    padding: 0 var(--content-padding); /*padding 2 bên*/
+}
+
+/*background cho filter*/
+.bg-color-filter {
+    background-color: #f8dad7;
+}
+
+/*section filter chính chứa các option cần css*/
+#filter {
+    position: absolute;
+    border-radius: 10px 10px;
+    box-shadow: 22px 16px 7px rgba(0, 0, 0, 0.3);
+    width: 65%;
+    display: none;
+}
+
+/*button filter*/
+.btn-filter {
+    background-color: var(--button-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px 5px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    position: relative;
+}
+
+/*thẻ i (icon) của button filter*/
+.btn-filter i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+/*button tiêu chuẩn của website*/
+.btn-primary {
+    background-color: var(--button-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px 5px;
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*css cho li của filter có width cố định, đủ độ rộng để chứa các thẻ bên trong*/
+.li-filter {
+    width: 100px;
+}
+
+/*li hover thì filter chính hiện ra*/
+ul li:hover #filter {
+    display: block;
+}
+
+/*các section con nằm trong #filter*/
+.filter-box {
+    height: 160px;
+}
+
+/*css cho khối categories của filter-box*/
+.categories {
+    padding: 40px;
+}
+
+.categories li {
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.categories a {
+    font-weight: 300;
+    color: #34404b;
+}
+
+.categories li:hover a {
+    color: palevioletred;
+}
+
+/*price filter*/
+.filter-box-price {
+    padding: 39px 42px;
+    position: relative;
+}
+
+/*brands filter*/
+.filter-box-brands {
+    padding: 42px;
+}
+
+.filter-box-size {
+    padding: 42px 41px;
+}
+
+/*price max value*/
+.max-value {
+    float: right;
+    line-height: inherit;
+}
+
+/*price from value*/
+.from {
+    position: absolute;
+    left: 45px;
+    bottom: 28px;
+}
+
+/*price filter input*/
+.from-input {
+    left: 30%;
+    margin-bottom: 12px;
+}
+
+/*price to value*/
+.to {
+    position: absolute;
+    right: 30%;
+    bottom: 28px;
+}
+
+/*price min filter*/
+.price-min {
+    width: 130px;
+}
+
+/*tiêu đề của từng khối lọc con filter-box*/
+.filter-box h5 {
+    margin: 0;
+    font-size: 18px;
+    line-height: auto;
+    color: #ff5912;
+}
+
+/*section chứa 2 button lọc và reset của filter*/
+.filter-footer {
+    margin-bottom: 6px;
+    margin-right: 4px;
+}
+
+/*content chứa các sản phẩm*/
+#content {
+    width: 100%;
+    background-color: white;
+}
+
+/*mỗi row chứa tiêu đề như levents và các sản phẩm và nút xem thêm là content-item*/
+#content .content-item {
+    border-radius: 3px;
+}
+
+/*tiêu đề của content-item: ví dụ Levents*/
+#content .content-item h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    color: #ff6683;
+    height: 40px;
+    line-height: 40px;
+    padding-left: var(--content-padding);
+}
+
+/*table gồm 4 td, chứa các ảnh và giá và icon shop bên trong, mỗi sản phẩm là 1 td*/
+#content table {
+    height: 400px;
+    width: 100%;
+    padding-left: var(--content-padding); /*padding 2 bên*/
+}
+
+/*css cho chiều cao của từng td chứa sản phẩm*/
+#content table tr td {
+    height: 400px;
+}
+
+/*là từng sản phẩm trong td*/
+.content-product {
+    height: 350px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    /*hiệu ứng đổ bóng*/
+    transition: all 0.5s ease 0s;
+    border-radius: 7px;
+    width: 90%;
+    /*hiệu ứng làm chậm*/
+}
+
+.content-product:hover {
+    border-bottom: 2px solid var(--text-color);
+}
+
+/*ảnh của sản phẩm*/
+#content table tr td img {
+    width: 246px;
+    height: 250px;
+}
+
+/*giá của sản phẩm, tên của sản phẩm là thẻ <p>, css để thẻ p có độ cao nhất định*/
+#content table tr td p {
+    text-align: center;
+    height: 40px;
+}
+
+/*section chứa giá, giảm giá, icon giỏ hàng*/
+.product-shopping {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*tên sản phẩm*/
+.product-name a {
+    text-decoration: none;
+    color: black;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.product-name a:hover {
+    transition: all 0.5s ease 0s;
+    font-size: 13pt;
+}
+
+/*giá của sản phẩm*/
+.product-price {
+    font-size: inherit;
+    font-weight: 800;
+    color: #ff6683;
+    margin: 0;
+}
+
+/*giá sản phẩm sale*/
+.product-sale {
+    font-size: inherit;
+    font-weight: 800;
+    margin: 0;
+}
+
+/*icon giỏ hàng*/
+.add-cart {
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    color: #ff6683;
+}
+
+/*css cho section button xem thêm sản phẩm*/
+.btn-more-product {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.btnlink-more-product {
+    display: inline-block;
+    background-color: #ff3355;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-right: var(--content-padding);
+    border-radius: 5px 5px;
+}
+
+.btnlink-more-product:hover {
+    background: #d73851;
+    border: 1px solid #d73851;
+}
+
+/*thông tin phụ*/
+.thong-tin-phu {
+    width: 100%;
+    height: 150px;
+}
+
+/* ưu đãi */
+.uu-dai {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.uudai-form {
+    margin: 9px 0px;
+}
+
+.uu-dai-title {
+    text-decoration: underline;
+    padding-bottom: 25px;
+}
+
+.uu-dai-bottom {
+    padding-top: 10px;
+    font-size: small;
+}
+
+/*footer*/
+footer {
+    height: 260px;
+    background-color: #f49090;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#footer-table {
+    width: 100%;
+    height: 100%;
+}
+
+#footer-table tr td {
+    width: 33.3%;
+}
+
+.footer-title {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.footer-list {
+    color: white;
+}
+
+.footer-list a:hover {
+    color: #ef3f5a;
+}
+
+.footer-box {
+    height: 190px;
+    padding: 30px;
+}
+
+.footer-img {
+    width: 180px;
+    height: 45px;
+}
+
+/*css cho button scroll lên top*/
+#btn-scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 72, 97);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*icon của button top*/
+#btn-scroll-top i {
+    margin-top: 7px;
+}
+
+/*giỏ hàng*/
+.cart-form {
+    width: 400px;
+    background-color: #ffdede;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 10px 10px;
+}
+
+.cart-form h2 {
+    color: #ff3355;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    margin-bottom: 10px;
+}
+
+.total-products,
+.total-price {
+    font-weight: bold;
+    color: #ff3355;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cart-buttons button {
+    background-color: #ff3355;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.cart-buttons button:hover {
+    background-color: #ff6683;
+}
