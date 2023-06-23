@@ -1,0 +1,284 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <title>Mitachan Shop</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <section id="top"></section>
+    <header>
+        <section class="header-top flex-between">
+            <p class="header-top-item basics-50">Hotline: 0849050502 (8h-21h30) | <a href="#" class="header-top-link">Liên hệ hợp tác</a></p>
+            <p class="header-top-item basics-50 align-right"><a href="#" class="header-top-link">Kiểm tra đơn hàng </a> | <a href="#" class="header-top-link">Mua hàng tại Shopee</a></p> 
+        </section>
+        <section class="header-center flex-between">
+            <nav class="header-menu basics-50">
+                <img class="logo" src="img/logo.png"/>
+                <section id="menu">
+                    <ul  class="menu-lv0">
+                    <li class="current-menu-item"><a href="MitachanShop.html">Cửa hàng</a>
+                        <ul class="menu-lv1">
+                            <li><a href="#">Tất cả</a></li>
+                            <li><a href="#">Sản phẩm mới</a></li>
+                            <li><a href="#">Áo</a>
+                                <ul class="menu-lv2">
+                                    <li><a href="#">Áo thun trơn</a></li>
+                                    <li><a href="#">Áo thun họa tiết</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+                    <li><a href="#">Giảm giá</a></li>
+                    <li><a href="#">Bộ sưu tập</a>
+                        <ul class="menu-lv1">
+                            <li><a href="#">Sản phẩm mới</a></li>
+                            <li><a href="#">Sản phẩm bán chạy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bài viết</a>
+                        <ul class="menu-lv1">
+                            <li><a href="https://giadinh.suckhoedoisong.vn/5-xu-huong-ao-thun-thanh-lich-tinh-te-cua-mua-he-2023-172230509210237085.htm" target="_blank">Xu hướng thời trang</a></li>
+                            <li><a href="#">Kiến thức thời trang</a>
+                                <ul class="menu-lv2">
+                                    <li><a href="https://maymacquangminh.com/tin-tuc/5-meo-chon-ao-thun-vua-van-voi-moi-voc-dang.html" target="_blank">Kiến thức mua hàng</a></li>
+                                    <li><a href="https://www.elle.vn/xu-huong-phong-cach/dinh-hinh-phong-cach-thoi-trang-co-ban" target="_blank">Kiến thức xây dựng phong cách</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </section>
+            </nav>
+            <ul class="header-center-item basics-50 align-right cart-lv0">
+                <li class="dropdown">
+                    <a href="FormDangNhap.html"><i class="material-icons">person</i> Đăng nhập</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="material-icons">favorite</i> Yêu thích</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">shopping_bag</i> Giỏ hàng <span class="cart-quantity">(0)</span></a>
+                    <ul class="cart-lv1">
+                        <li>
+                            <form class="cart-form">
+                                <h2>Giỏ hàng</h2>
+                                <section class="cart-items">
+                                  <p>Không có sản phẩm nào trong giỏ hàng.</p>
+                                </section>
+                                <section class="cart-summary">
+                                  <p>Tổng số sản phẩm: <span class="total-products">0</span></p>
+                                  <p>Tổng tiền: <span class="total-price">0</span> VNĐ</p>
+                                </section>
+                                <section class="cart-buttons">
+                                  <button type="button">Tiếp tục mua hàng</button>
+                                  <button type="button">Thanh toán</button>
+                                </section>
+                              </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </header>
+        <main class="prod-detail-main">
+            <section class="prod-detail-container">
+                <section  class="prod-detail-row-title"><a href="MitachanShop.html">Cửa hàng</a><span> / Chi tiết sản phẩm</span></section>
+                <section class="prod-detail-row prod-detail-row-1">
+                    <section class="prod-detail-column-left">
+                        <img src="img/teelabtrang1.webp" alt="pro-img" id="image-detail" class="prod-detail-img">
+                    </section>
+                    <section class="prod-detail-column-right" id="info-detail">
+                        <h3>Gambling Cats Tee/ White</h3>
+                        <p>Còn hàng</p>
+                        <br>
+                        <del>350.000đ</del> <span id="prod-detail-price">280.000đ</span>
+                        <br><br>
+                        <label for="numQuantity">Số lượng</label><br>
+                        <input type="number" name="numQuantity" id="numQuantity" min = "1" max = "100" step="1" value="1">
+                        <br><br>
+                        <a href="#" class="btnlink-more-product prod-detail-btn">Thêm vào giỏ hàng</a>
+                        <br><br>
+                        <a href="#" class="btnlink-more-product prod-detail-btn">Mua ngay</a>
+                    </section>
+                </section>
+                
+                <section class="prod-detail-row prod-detail-row-2">
+                    <section class="prod-detail-column-left" id="info-prod-detail">
+                        <h3 class="prod-detail-title">Thông tin sản phẩm</h3>
+                        <p>
+                            💥 Gambling Cats Tee/ White 💥<br>
+                            👉 Chất liệu: Cotton<br>
+                            👉 4 size : S, M , L, XL
+                        </pre>
+                    </section>
+                    <section class="prod-detail-column-right" id="payment-detail">
+                        <h3 class="prod-detail-title">Hình thức thanh toán</h3>
+                        <p>
+                            🚗 Giao hàng nội thành siêu tốc<br>
+                            ☎️ Liên hệ hotline 0849050502<br>
+                            🎁 KHUYẾN MÃI CỰC HOT:<br>
+                            🤟 Order 5-10 món: Giảm 5%/tổng đơn.<br>
+                            🤟 Order 11-20 món: Giảm 10%/tổng đơn.
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <section id="content">
+                <article class="content-item">
+                    <h3>CÓ THỂ BẠN THÍCH</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <section class="content-product">
+                                    <a href="SanPham.html"><img src="img/chilitrang1.webp"/></a>
+                                    <p class="product-name"><a href="SanPham.html">Coconut Tee/ White</a></p>
+                                    <section class="product-shopping">
+                                        <del class="product-sale">320.000đ</del>
+                                        <p class="product-price underline">200.000đ</p>
+                                        <i class="material-icons add-cart">shopping_cart</i>
+                                    </section>
+                                </section>
+                            </td>
+                            <td>
+                                <section class="content-product">
+                                    <a href="SanPham.html"><img src="img/chiliden1.webp"/></a>
+                                    <p class="product-name"><a href="SanPham.html">Wave Tee/ Black</a></p>
+                                    <section class="product-shopping">
+                                        <del class="product-sale">320.000đ</del>
+                                        <p class="product-price underline">250.000đ</p>
+                                        <i class="material-icons add-cart">shopping_cart</i>
+                                    </section>
+                                </section>
+                            </td>
+                            <td>
+                                <section class="content-product">
+                                    <a href="SanPham.html"><img src="img/chilitrang2.webp"/></a>
+                                    <p class="product-name"><a href="SanPham.html">Internet Tee/ White</a></p>
+                                    <section class="product-shopping">
+                                        <p class="product-price">320.000đ</p>
+                                        <i class="material-icons add-cart">shopping_cart</i>
+                                    </section>
+                                </section>
+                            </td>
+                            <td>
+                                <section class="content-product">
+                                    <a href="SanPham.html"><img src="img/chiliden2.webp"/></a>
+                                    <p class="product-name"><a href="SanPham.html">People Tee/ Black</a></p>
+                                    <section class="product-shopping">
+                                        <p class="product-price">300.000đ</p>
+                                        <i class="material-icons add-cart">shopping_cart</i>
+                                    </section>
+                                </section>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <section class="thong-tin-phu flex-between align-center">
+                <aside class="basics-25 mr-30">
+                    <i class="material-icons add-cart">bento</i>
+                    <p>CAM KẾT HÀNG CHÍNH HÃNG</p>
+                </aside>
+                <aside class="basics-25">
+                    <i class="material-icons add-cart">production_quantity_limits</i>
+                    <p>THANH TOÁN AN TOÀN</p>
+                </aside>
+                <aside class="basics-25">
+                    <i class="material-icons add-cart">moped</i>
+                    <p>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG</p>
+                </aside>
+                <aside class="basics-25 ml-30">
+                    <i class="material-icons add-cart">phone_callback</i>
+                    <p>HỖ TRỢ KHÁCH HÀNG <br>
+                        (+84) 849050502 <br>
+                        (9H - 18H. Thứ 2 - Thứ 6)
+                    </p>
+                </aside>
+            </section>
+            <section class="uu-dai align-center">
+                <p class="uu-dai-title">Bản tin</p>
+                <h3>Đăng ký nhận bản tin của chúng tôi để nhận các tin tức,<br>ưu đãi đặc biệt và các khuyến mãi độc quyền</h3>
+                <section class="uudai-form cover">
+                    <form  class="flex-form" type="post" name="frmUuDai">
+                      <input type="search" name="txtEmail" placeholder="Email của bạn">
+                      <input type="submit" name="btnSend" value="Gửi">
+                    </form>
+                </section>
+                <p class="uu-dai-bottom">Bằng cách tạo tài khoản, bạn đồng ý với chính sách bảo mật của chúng tôi </p>
+            </section>
+        </main>
+    <footer>
+        <table id="footer-table">
+            <tr>
+                <td>
+                    <aside class="footer-box">
+                        <table>
+                            <caption class="footer-title">HỖ TRỢ KHÁCH HÀNG</caption>
+                            <tr>
+                                <td class="footer-list">- 1028 Đường Láng, Đống Đa, Hà Nội</td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list">- 28 Đường Láng, Đống Đa, Hà Nội</td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list">- 411 Nguyễn Văn Cừ, Long Biên, Hà Nội</td>
+                            </tr>
+                        </table>
+                    </aside>
+                </td>
+                <td>
+                    <aside class="footer-box">
+                        <table>
+                            <caption class="footer-title">HỖ TRỢ KHÁCH HÀNG</caption>
+                            <tr>
+                                <td class="footer-list"><a href="#">Các câu hỏi thường gặp</a></td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Liên hệ chúng tôi</a></td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Tra cứu đơn hàng</a></td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Hướng dẫn đo kích thước</a></td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Chích sách đổi hàng</a></td>
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Chính sách giao hàng</a></td>
+                            </tr>
+                        </table>
+                    </aside>
+                </td>
+                <td>
+                    <aside class="footer-box">
+                        <table>
+                            <caption class="footer-title">THÔNG BÁO PHÁP LÝ</caption>
+                            <tr>
+                                <td class="footer-list"><a href="#">Thông tin công ty</a></td>                       
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Điều khoản sử sụng</a></td>                 
+                            </tr>
+                            <tr>
+                                <td class="footer-list"><a href="#">Chính sách bảo mật</a></td>
+                            </tr>
+                            <tr> 
+                                <td class="footer-list">
+                                    <a href="MitachanShop.html" target="_blank" rel="nofollow">
+                                        <a href="#"><img class="footer-img" src="img/chinhsach.png"></a>
+                                </td>          
+                            </tr>
+                        </table>
+                    </aside>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <a href="#top" id="btn-scroll-top"><i class="material-icons add-cart">navigation</i></a>
+</body>
+</html>

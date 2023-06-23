@@ -1,7 +1,7 @@
 <html >
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logonew-removebg-preview.png">
     <title>Mitachan Shop</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,7 +18,7 @@
                 <img class="logo" src="img/logo.png"/>
                 <section id="menu">
                     <ul  class="menu-lv0">
-                    <li class="current-menu-item"><a href="#">Cửa hàng</a>
+                    <li class="current-menu-item"><a href="MitachanShop.html">Cửa hàng</a>
                         <ul class="menu-lv1">
                             <li><a href="#">Tất cả</a></li>
                             <li><a href="#">Sản phẩm mới</a></li>
@@ -39,11 +39,11 @@
                     </li>
                     <li><a href="#">Bài viết</a>
                         <ul class="menu-lv1">
-                            <li><a href="#">Xu hướng thời trang</a></li>
+                            <li><a href="https://giadinh.suckhoedoisong.vn/5-xu-huong-ao-thun-thanh-lich-tinh-te-cua-mua-he-2023-172230509210237085.htm" target="_blank">Xu hướng thời trang</a></li>
                             <li><a href="#">Kiến thức thời trang</a>
                                 <ul class="menu-lv2">
-                                    <li><a href="#">Kiến thức mua hàng</a></li>
-                                    <li><a href="#">Kiến thức xây dựng phong cách</a></li>
+                                    <li><a href="https://maymacquangminh.com/tin-tuc/5-meo-chon-ao-thun-vua-van-voi-moi-voc-dang.html" target="_blank">Kiến thức mua hàng</a></li>
+                                    <li><a href="https://www.elle.vn/xu-huong-phong-cach/dinh-hinh-phong-cach-thoi-trang-co-ban" target="_blank">Kiến thức xây dựng phong cách</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -60,7 +60,7 @@
                     <a href="#"><i class="material-icons">favorite</i> Yêu thích</a>
                 </li>
                 <li>
-                    <a href="FormGioHang.html"><i class="material-icons">shopping_bag</i> Giỏ hàng <span class="cart-quantity">(0)</span></a>
+                    <a href="#"><i class="material-icons">shopping_bag</i> Giỏ hàng <span class="cart-quantity">(0)</span></a>
                     <ul class="cart-lv1">
                         <li>
                             <form class="cart-form">
@@ -84,9 +84,25 @@
         </section>
     </header>
     <main>
-        <aside id="banner">
+        <!-- <aside id="banner">
             <h1>Mitachan Shop</h1>
-        </aside>
+        </aside> -->
+        <aside id="banner">
+            <section class="banner-title"><h3>MitachanShop</h3><i>Local Style, Global Passion</i></section>
+            <form>
+               <p class="slidebar">
+                  <label for="slide-dot-1" ></label>
+                  <label for="slide-dot-2" ></label>
+                  <label for="slide-dot-3" ></label>
+               </p>
+               <input id="slide-dot-1" type="radio" name="slides" checked hidden>
+               <p class="slide slide-1"></p>
+               <input id="slide-dot-2" type="radio" name="slides" hidden>
+               <p class="slide slide-2"></p>
+               <input id="slide-dot-3" type="radio" name="slides" hidden>
+               <p class="slide slide-3"></p>
+            </form>
+         </aside>
         <aside id="toolbar">
             <h1 class="title">ÁO THUN TRƠN & ÁO THUN HỌA TIẾT (54)</h1>
             <section class="cover">
@@ -99,7 +115,7 @@
         <aside id="section-filter">
             <ul>
                 <li  class="li-filter">
-                   <button class="btn-filter" id="btn-filter-click"><i class="material-icons">filter_alt</i>Filter</button>
+                   <button class="btn-filter" id="btn-filter-click"><i class="material-icons">filter_alt</i>Bộ lọc</button>
                    <ul>
                       <li>
                          <section id="filter" class="bg-color-filter">
@@ -149,20 +165,20 @@
                                      <section class="filter-box-brands">
                                         <h5 class="section__title">Thương hiệu</h5>
                                         <section>
-                                             <input type="checkbox" name="chkBrandLevents" value="levents" id="chkBrandLevents">
-                                             <label for="chkBrandLevents">Levents</label><br>
+                                             <input type="checkbox" name="chkBrandTeeLab" value="TeeLab" id="chkBrandTeeLab">
+                                             <label for="chkBrandTeeLab">TeeLab</label><br>
                                         </section>
                                         <section>
-                                             <input type="checkbox" name="chkBrandSWE" value="swe" id="chkBrandSWE">
-                                             <label for="chkBrandSWE">SWE</label><br>
+                                             <input type="checkbox" name="chkBrandChiliClub" value="ChiliClub" id="chkBrandChiliClub">
+                                             <label for="chkBrandChiliClub">Chili Club</label><br>
                                         </section>
                                         <section>
                                              <input type="checkbox" name="chkBrandScott" value="swe" id="chkBrandScott">
                                              <label for="chkBrandScott">Scott Platon</label><br>
                                         </section>
                                         <section>
-                                             <input type="checkbox" name="chkBrandEtienne" value="etienne" id="chkBrandEtienne">
-                                             <label for="chkBrandEtienne">Etienne</label><br>
+                                             <input type="checkbox" name="chkBrandLevents" value="Levents" id="chkBrandLevents">
+                                             <label for="chkBrandLevents">Levents</label><br>
                                         </section>
                                      </section>
                                   </section>
@@ -185,8 +201,8 @@
                     <tr>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/teelabden1.webp"/></a>
-                                <p class="product-name"><a href="#">Cat Vibe Tee / Black</a></p>
+                                <a href="SanPham.html"><img src="img/teelabden1.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Cat Vibe Tee / Black</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">350.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -195,8 +211,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/teelabtrang1.webp"/></a>
-                                <p class="product-name"><a href="#">Gambling Cats Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/teelabtrang1.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Gambling Cats Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">350.000đ</del>
                                     <p class="product-price underline">280.000đ</p>
@@ -206,8 +222,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/teelabden2.webp"/></a>
-                                <p class="product-name"><a href="#">Gameboy Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/teelabden2.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Gameboy Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">350.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -216,8 +232,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/teelabtrang2.webp"/></a>
-                                <p class="product-name"><a href="#">Gotta Cat Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/teelabtrang2.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Gotta Cat Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">350.000đ</del>
                                     <p class="product-price underline">280.000đ</p>
@@ -235,8 +251,8 @@
                     <tr>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/chilitrang1.webp"/></a>
-                                <p class="product-name"><a href="#">Coconut Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/chilitrang1.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Coconut Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">320.000đ</del>
                                     <p class="product-price underline">200.000đ</p>
@@ -246,8 +262,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/chiliden1.webp"/></a>
-                                <p class="product-name"><a href="#">Wave Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/chiliden1.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Wave Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">320.000đ</del>
                                     <p class="product-price underline">250.000đ</p>
@@ -257,8 +273,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/chilitrang2.webp"/></a>
-                                <p class="product-name"><a href="#">Internet Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/chilitrang2.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">Internet Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">320.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -267,8 +283,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/chiliden2.webp"/></a>
-                                <p class="product-name"><a href="#">People Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/chiliden2.webp"/></a>
+                                <p class="product-name"><a href="SanPham.html">People Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">300.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -285,8 +301,8 @@
                     <tr>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/scotden1.jpeg"/></a>
-                                <p class="product-name"><a href="#">MonaLisa Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/scotden1.jpeg"/></a>
+                                <p class="product-name"><a href="SanPham.html">MonaLisa Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">200.000đ</del>
                                     <p class="product-price underline">100.000đ</p>
@@ -296,8 +312,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/scottrang1.jpg"/></a>
-                                <p class="product-name"><a href="#">Baby Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/scottrang1.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">Baby Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">200.000đ</del>
                                     <p class="product-price underline">100.000đ</p>
@@ -307,8 +323,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/scottrang2.jpg"/></a>
-                                <p class="product-name"><a href="#">PAWS Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/scottrang2.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">PAWS Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">200.000đ</del>
                                     <p class="product-price underline">100.000đ</p>
@@ -318,8 +334,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/scotden2.jpeg"/></a>
-                                <p class="product-name"><a href="#">MultiColor Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/scotden2.jpeg"/></a>
+                                <p class="product-name"><a href="SanPham.html">MultiColor Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">200.000đ</del>
                                     <p class="product-price underline">100.000đ</p>
@@ -337,8 +353,8 @@
                     <tr>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/leventstrang1.jpg"/></a>
-                                <p class="product-name"><a href="#">Bichontour Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/leventstrang1.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">Bichontour Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">350.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -347,8 +363,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/leventsden1.jpg"/></a>
-                                <p class="product-name"><a href="#">You Got This Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/leventsden1.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">You Got This Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <!-- giảm giá -->
                                     <del class="product-sale">480.000đ</del>
@@ -359,8 +375,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/leventstrang2.jpg"/></a>
-                                <p class="product-name"><a href="#">Anniversary Tee/ White</a></p>
+                                <a href="SanPham.html"><img src="img/leventstrang2.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">Anniversary Tee/ White</a></p>
                                 <section class="product-shopping">
                                     <p class="product-price">390.000đ</p>
                                     <i class="material-icons add-cart">shopping_cart</i>
@@ -369,8 +385,8 @@
                         </td>
                         <td>
                             <section class="content-product">
-                                <a href="#"><img src="img/leventsden2.jpg"/></a>
-                                <p class="product-name"><a href="#">Funny Crocodile Tee/ Black</a></p>
+                                <a href="SanPham.html"><img src="img/leventsden2.jpg"/></a>
+                                <p class="product-name"><a href="SanPham.html">Funny Crocodile Tee/ Black</a></p>
                                 <section class="product-shopping">
                                     <del class="product-sale">460.000đ</del>
                                     <p class="product-price underline">320.000đ</p>
@@ -422,7 +438,7 @@
                 <td>
                     <aside class="footer-box">
                         <table>
-                            <caption class="footer-title">HỖ TRỢ KHÁCH HÀNG</caption>
+                            <caption class="footer-title">LIÊN HỆ</caption>
                             <tr>
                                 <td class="footer-list">- 1028 Đường Láng, Đống Đa, Hà Nội</td>
                             </tr>
